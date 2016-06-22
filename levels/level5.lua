@@ -227,7 +227,7 @@ function level:events(t)
 		sum(grid.x1, grid.y3, "y-", 8, 4/6)
 		sum(grid.x3, grid.y3, "y-", 8, 5/6)
 
-	elseif t == 66 then return gamestate.switch(MENU, false, true) end
+	elseif t == 66 then return gamestate.switch(main.GAME, 6, false) end
 end
 
 return level
