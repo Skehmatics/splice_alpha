@@ -2,7 +2,7 @@ require 'math'
 class = require 'bin/class' --literally why
 random = math.random
 require 'bin/TEsound'
-sound = TEsound --Idk why we have to do it this way, but it doesnt work when we do it the right way.
+sound = TEsound
 gamestate = require 'bin/gamestate'
 timer = require 'bin/timer'
 ser = require 'bin/ser'
@@ -310,7 +310,7 @@ MENU = {}
 				timershift:tween(2.5, selector, { x=-(bounds.h > bounds.w and bounds.h or bounds.w)/2, y=-(bounds.h > bounds.w and bounds.h or bounds.w)/2, w=(bounds.h > bounds.w and bounds.h or bounds.w)*2, h=(bounds.h > bounds.w and bounds.h or bounds.w)*2 }, function(t) return timer.tween.quart(timer.tween.quart(t)) end)
 				timershift:tween(2.5, tweens, {volume = 0}, 'in-expo', function()
 					gamestate.pop()
-					gamestate.switch(TRANS, false)
+					gamestate.switch(TRANS)
 				end )
 			end)
 			timer.tween(2.5, tweens, {hidden = 1}, 'in-quad')
@@ -436,7 +436,7 @@ MENU = {}
 
 TRANS = {}
 
-	function TRANS:enter(current, fast)
+	function TRANS:enter(current)
 		--Init variables
 		tweens = {ttint=0, squarefill=0, alpha=0}
 
@@ -681,6 +681,7 @@ function love.load(arg)
 	volume = 1
 	objects = {}
 	impact = {radius=0, angle=0}
+	fast = false
 
 	--Render fonts
 	UltraLight = love.graphics.newFont('font/AvenirNextLTPro-Ultralight.otf', 150)
