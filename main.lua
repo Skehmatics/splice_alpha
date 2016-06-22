@@ -581,7 +581,12 @@ TRANS = {}
 		--Draw a mock up of the player
 		fill(1, 1, 1, tweens.squarefill)
 		rect(bounds.center.x-scale(40), bounds.center.y-scale(40), scale(80), scale(80))
-		--TODO: animate game bounds in
+
+		--Game bounds mockup
+		fill(1, 1, 1, 0.2*tweens.squarefill)
+		stroke(2)
+		line(gamebounds.x, gamebounds.y, gamebounds.endx, gamebounds.y, gamebounds.endx, gamebounds.endy, gamebounds.x, gamebounds.endy, gamebounds.x, gamebounds.y)
+
 	end
 
 
