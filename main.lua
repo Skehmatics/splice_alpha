@@ -111,7 +111,7 @@ obj = class{
 		if collision and not self.benign then
 			player.health = player.health - self.damage
 			sound.play({'sfx/whine1.ogg', 'sfx/whine2.ogg','sfx/whine3.ogg','sfx/whine4.ogg','sfx/whine5.ogg'}, 'sfx', 0.25, math.random()/2+1)
-			impact={radius=scale(self.damage*3), angle=math.random(0, 360)}
+			impact={radius=self.damage*3, angle=math.random(0, 360)}
 			timer.tween(0.3, impact, {radius=0}, 'out-expo', function()
 			end)
 			if self.type:match('f') then
