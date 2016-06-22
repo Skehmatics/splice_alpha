@@ -1,3 +1,5 @@
+Licenced under [Creative Commons Attribution Share Alike 4.0](https://creativecommons.org/licenses/by-sa/4.0/) excluding the projects listed below
+
 --LOVE--
 
 Copyright © 2006-2016 LÖVE Development Team
