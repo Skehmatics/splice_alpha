@@ -55,10 +55,9 @@ function level:events(t)
 		sum(grid.x3, grid.y2, "s", 6)
 		sum(grid.x2, grid.y3, "s", 6)
 		sum(grid.x2, grid.y1, "s", 6)
-	elseif t == 39 then
 		sum(grid.x1+grid.third, grid.y2, "s", 8, 1/2)
 	elseif t == 40 then
-		sum(grid.x3-grid.third, grid.y2, "s", 8, 1/4)
+		sum(grid.x3-grid.third, grid.y2, "s", 8, 1/3)
 	elseif t == 41 then
 		sum(grid.x1, grid.y1, "sr", 3)
 		sum(grid.x2, grid.y1, "sr", 3)
