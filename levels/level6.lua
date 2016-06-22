@@ -30,7 +30,7 @@ function level:events(t)
 		sum(grid.x3, grid.y2, "x-", 9, 1/3)
 	elseif t == 35 then
 		sum(grid.x1+grid.third, grid.y3, "y-", 25, nil, 5)
-		sum(grid.x2, grid.y3, "y-", 25, "n", dmg=5)
+		sum(grid.x2, grid.y3, "y-", 25, nil, 5)
 		sum(grid.x3-grid.third, grid.y3, "y-", 25, nil, 5)
 	elseif t == 36 then
 		sum(grid.x1, grid.y1, "s", 6, 1/3)
