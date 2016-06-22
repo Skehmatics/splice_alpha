@@ -2,7 +2,7 @@ require 'math'
 class = require 'bin/class' --literally why
 random = math.random
 require 'bin/TEsound'
-sound = TEsound
+sound = TEsound --Idk why we have to do it this way, but it doesnt work when we do it the right way.
 gamestate = require 'bin/gamestate'
 timer = require 'bin/timer'
 ser = require 'bin/ser'
