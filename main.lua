@@ -735,6 +735,12 @@ GAME = {}
 				gamestate.switch(MENU, false, true)
 			end)
 		end
+
+		--DEBUG: r for instant restart
+		if key == 'r' then
+			sound.stop('music')
+			gamestate.switch(GAME, levelnum, true)
+		end
 	end
 
 
